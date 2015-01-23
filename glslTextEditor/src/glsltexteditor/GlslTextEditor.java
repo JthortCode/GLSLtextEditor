@@ -1,22 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package glsltexteditor;
 
-/**
- *
- * @author john
- */
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+
 public class GlslTextEditor {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        Testing!!
+        JFrame frame = createFrame();
+        createJTA(frame);
+        frame.setVisible(true);
+    }
+    
+    public static JFrame createFrame(){
+        JFrame frame = new JFrame();
+        frame.setSize(500, 500);
+        return frame;
+    }
+    
+    public static JTextArea createJTA(JFrame frame){
+        JTextArea textArea = new JTextArea();
+        textArea.setSize(frame.getSize());
+        frame.add(textArea);
+        textArea.setVisible(true);
+        return textArea;
     }
     
 }

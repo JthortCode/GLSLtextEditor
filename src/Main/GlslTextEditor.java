@@ -8,7 +8,6 @@ import javax.swing.JTextArea;
 
 public class GlslTextEditor {
     
-    //testing
 
     public static void main(String[] args) {
         JFrame frame = createFrame();
